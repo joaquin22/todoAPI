@@ -12,8 +12,12 @@ up: build
 down:
 	$(DOCKER_COMPOSE) down
 
+.PHONY: migrate
+migrate:
+	cd src && python manage.py migrate
+
 .PHONY: runserver
-runserver:
+runserver: migrate
 	cd src && python manage.py runserver
 
 .PHONY: pytest

@@ -4,14 +4,15 @@ Esta es una API RESTful creada con Django y Django Rest Framework, para el desar
 
 ## Requisitos
 
-- Python 3.11
+- Python 3.8 o superior
 - Poetry(Opcional)
 - Docker
 - Docker Compose
 
 ## Instalación
 
-Clonar el repositorio, dentro del la carpeta src/ del proyecto ejecutar:
+Clonar el repositorio.
+Dentro del la carpeta src/ del proyecto ejecutar:
 
 ```bash
 poetry install
@@ -31,7 +32,7 @@ pip install -r requirements.txt
 
 ## Levantar el servidor
 
-Para levantar el servidor localmente sin docker, ejecutar el siguiente comando:
+Para levantar el servidor localmente sin docker, ejecutar el siguiente comando en la raiz del proyecto:
 
 ```bash
 make runserver
@@ -54,4 +55,3 @@ make pytest
 ## Swagger
 
 La documentación de la API se puede acceder a través de Swagger, en la ruta `http://localhost:8000/swagger/`.
-
